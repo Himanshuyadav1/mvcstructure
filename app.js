@@ -1,14 +1,14 @@
 const express = require('express'); // Importing express
 const port = process.env.port || 4000; // getting port number from .env file or providing default port
+// importing route in old way
+const route = require('./routes/web');
 
 // initializing the server
 const app = express(); 
 
-//making basic route from server
-app.get('/', (req, res) => {
-    // sending response from server to client
-    res.send('Hello from server!!');  
-});
+// using router for routes
+app.use('/', route);
+
 
 // listening server
 app.listen(port, () => {
