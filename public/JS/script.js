@@ -1,0 +1,1 @@
+alert("Welcome to Basic MVC architecture in ExpressJS");
