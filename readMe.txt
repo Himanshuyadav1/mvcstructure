@@ -8,3 +8,4 @@ Steps for creating project
 3.  write basic code for running server in app.js
 4.  create basic routes for project in routes/web.js
 5.  create controller for those basic routes
+6.  create html files for views and send them to client
